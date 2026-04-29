@@ -1,6 +1,6 @@
 <?php
 
-class Caracter {
+class Character {
     public $char;
     public $x;
     public $y;
@@ -26,9 +26,9 @@ class Caracter {
 }
 
 // Usage
-$char1 = new Caracter('A', 10, 20, 'Arial', 12, true, false);
-$char2 = new Caracter('B', 30, 40, 'Arial', 12, true, false);
-$char3 = new Caracter('C', 50, 60, 'Arial', 12, true, true);
+$char1 = new Character('A', 10, 20, 'Arial', 12, true, false);
+$char2 = new Character('B', 30, 40, 'Arial', 12, true, false);
+$char3 = new Character('C', 50, 60, 'Arial', 12, true, true);
 $char1->render();
 $char2->render();
 $char3->render();
