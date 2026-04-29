@@ -25,4 +25,4 @@ class WebmoneyPaymentAdapter implements PaymentGatewayInterface {
 
 //Usage:
 $paymentGateway = new WebmoneyPaymentAdapter(new WebmoneyService());
-echo $paymentGateway->pay(15, 155,5) . PHP_EOL;
+echo $paymentGateway->pay(15, 155.5) . PHP_EOL;
