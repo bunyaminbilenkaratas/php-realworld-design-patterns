@@ -95,7 +95,7 @@ class App
     }
 }
 
-class AppConfigrator
+class AppConfigurator
 {
     public function main($os): void
     {
@@ -117,5 +117,5 @@ class AppConfigrator
     }
 }
 
-$appConfigurator = new AppConfigrator();
+$appConfigurator = new AppConfigurator();
 $appConfigurator->main('Windows');
