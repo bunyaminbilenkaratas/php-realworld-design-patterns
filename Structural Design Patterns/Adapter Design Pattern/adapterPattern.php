@@ -5,7 +5,7 @@ interface PaymentGatewayInterface {
 }
 
 class WebmoneyService {
-    public function proccessPayment(array $data): string {
+    public function processPayment(array $data): string {
         return ($data['amount'] > 0) ? "success" : "failure";
     }
 }
@@ -19,7 +19,7 @@ class WebmoneyPaymentAdapter implements PaymentGatewayInterface {
 
     public function pay(int $referenceNumber, float $amount): bool {
         $data['amount'] = $amount;
-        return $this->webmoneyService->proccessPayment($data) === 'success';
+        return $this->webmoneyService->processPayment($data) === 'success';
     }
 }
 
